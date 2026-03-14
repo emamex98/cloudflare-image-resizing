@@ -51,9 +51,9 @@ export default {
 		const currentRootDomain = getRootDomain(currentDomain)
   
 		// Check if domains match at root level
-		if (sourceRootDomain !== currentRootDomain) {
-		  return new Response(`Must use "${currentRootDomain}" or its subdomains`, { status: 403 })
-		}
+		// if (sourceRootDomain !== currentRootDomain) {
+		//   return new Response(`Must use "${currentRootDomain}" or its subdomains`, { status: 403 })
+		// }
   
 		// Check for disallowed path prefixes
 		const disallowedPrefixes = ['/resize', '/image-resizing', '/thumb', '/thumbnail']
